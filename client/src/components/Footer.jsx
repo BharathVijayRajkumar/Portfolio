@@ -1,9 +1,9 @@
 import React from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { ArrowUp, Mail, Heart, Terminal } from 'lucide-react';
+import { ArrowUp, Mail, Heart } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
-export default function Footer({ onOpenTerminal }) {
+export default function Footer() {
   const { personal } = portfolioData;
 
   const scrollToTop = () => {
@@ -31,15 +31,8 @@ export default function Footer({ onOpenTerminal }) {
             </p>
           </div>
 
-          {/* Socials & Terminal Action */}
+          {/* Socials & Actions */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={onOpenTerminal}
-              className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-400 hover:text-cyan-400 border border-white/10 transition-colors"
-              title="Open Terminal"
-            >
-              <Terminal className="w-4 h-4" />
-            </button>
             <a
               href={personal.github}
               target="_blank"

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { Menu, X, Terminal, FileDown, Code2, Sparkles } from 'lucide-react';
+import { Menu, X, FileDown, Code2, Sparkles } from 'lucide-react';
 
-export default function Navbar({ onOpenTerminal, onOpenResume }) {
+export default function Navbar({ onOpenResume }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -68,19 +68,6 @@ export default function Navbar({ onOpenTerminal, onOpenResume }) {
 
           {/* Action CTAs */}
           <div className="hidden md:flex items-center space-x-3">
-            {/* Terminal launcher */}
-            <button
-              onClick={onOpenTerminal}
-              className="flex items-center space-x-1.5 px-3 py-1.5 text-xs font-mono font-medium text-slate-300 bg-white/5 hover:bg-cyan-500/10 hover:text-cyan-400 border border-white/10 hover:border-cyan-500/40 rounded-lg transition-all"
-              title="Open Interactive Developer Terminal"
-            >
-              <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Terminal</span>
-              <kbd className="px-1.5 py-0.5 text-[10px] bg-white/10 rounded text-slate-400 border border-white/10">
-                Ctrl+K
-              </kbd>
-            </button>
-
             {/* Resume CTA */}
             <button
               onClick={onOpenResume}
@@ -93,13 +80,6 @@ export default function Navbar({ onOpenTerminal, onOpenResume }) {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-2">
-            <button
-              onClick={onOpenTerminal}
-              className="p-2 text-slate-300 hover:text-cyan-400 bg-white/5 rounded-lg border border-white/10"
-              aria-label="Open Terminal"
-            >
-              <Terminal className="w-5 h-5 text-cyan-400" />
-            </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 text-slate-300 hover:text-white bg-white/5 rounded-lg border border-white/10"
