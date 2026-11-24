@@ -181,18 +181,17 @@ export const portfolioData = {
       architectureNotes: "Hardware pipeline built on an ESP32 microcontroller with a mini camera module streaming visual feeds to an emotion-classification model, triggering Linear Resonant Actuator (LRA) vibration sequences corresponding to detected facial emotions."
     },
     {
-      id: "bioweave",
-      title: "BioWeave Research Platform",
-      subtitle: "Biomedical & Genomic Sequence Visualization Hub",
-      description: "A comprehensive bioinformatics analytics platform engineered for fast sequence inspection, DNA/RNA motif pattern matching, and high-throughput computational data visualization.",
-      category: "Full Stack",
-      tags: ["React", "Node.js", "Express", "Tailwind CSS", "Data Analytics"],
-      metrics: "Sub-100ms render speeds for large genomic datasets",
-      featured: false,
-      demoUrl: "https://bioweave-demo.example.com",
-      githubUrl: "https://github.com/BharathVijayRajkumar",
-      image: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1200&q=80",
-      architectureNotes: "Full-stack dashboard combining interactive data charts and scalable REST APIs for scientific inspection."
+      id: "government-subsidy-tracking",
+      title: "Government Subsidy & Grant Disbursement Tracking System",
+      subtitle: "Enterprise Java Spring Boot & React Transparency Portal",
+      description: "An enterprise-grade tracking and disbursement system designed to monitor government subsidies, verify beneficiary eligibility, manage fund allocations, and maintain transparent audit trails across public programs.",
+      category: "Java Full Stack",
+      tags: ["Java", "Spring Boot", "React.js", "MySQL", "Spring Data JPA", "Hibernate", "REST APIs"],
+      metrics: "Layered enterprise architecture with JPA/Hibernate & MySQL",
+      featured: true,
+      githubUrl: "https://github.com/BharathVijayRajkumar/Government-Subsidy-Grant-Disbursement-Tracking-System",
+      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+      architectureNotes: "Engineered with a clean layered backend architecture (Controller, Service, Repository) powered by Java Spring Boot and Spring Data JPA. Includes database-level validations, MySQL transactions, and a reactive React.js frontend for transparent disbursement telemetry."
     },
     {
       id: "deepfake-forensics",

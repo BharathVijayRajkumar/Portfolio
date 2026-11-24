@@ -10,7 +10,7 @@ export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeProject, setActiveProject] = useState(null);
 
-  const categories = ['All', 'Full-Stack MERN', 'IoT & AI', 'Full Stack', 'AI & Full Stack'];
+  const categories = ['All', 'Full-Stack MERN', 'Java Full Stack', 'IoT & AI', 'AI & Digital Forensics'];
 
   const filteredProjects =
     selectedCategory === 'All'
@@ -33,7 +33,7 @@ export default function Projects() {
             Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">Projects</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-400">
-            Showcasing HOLOID (Full-Stack Hospital Bed Management System), Smart Wearable Glass with Emotion Detection for visually impaired individuals, and scientific computing architectures.
+            Showcasing HOLOID (Hospital Bed Management), Government Subsidy & Grant Tracking, Smart Wearable Glass with Emotion Detection, and Deepfake Forensic Analysis.
           </p>
         </div>
 
