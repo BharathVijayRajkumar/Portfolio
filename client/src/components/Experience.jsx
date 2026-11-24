@@ -72,6 +72,38 @@ export default function Experience() {
                         </div>
                       ))}
                     </div>
+
+                    {/* Capstone Project Card for Infosys Internship */}
+                    <div className="mt-5 p-4 rounded-xl bg-white/5 border border-cyan-500/20 hover:border-cyan-500/40 transition-colors">
+                      <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                        <span className="text-xs font-mono uppercase tracking-wider text-cyan-400 font-semibold flex items-center gap-1.5">
+                          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                          <span>Internship Capstone Project</span>
+                        </span>
+                        <a
+                          href="https://github.com/BharathVijayRajkumar/Government-Subsidy-Grant-Disbursement-Tracking-System"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-semibold text-cyan-300 hover:text-white hover:underline flex items-center gap-1"
+                        >
+                          <span>View Code on GitHub</span>
+                          <span className="text-cyan-400">↗</span>
+                        </a>
+                      </div>
+                      <h5 className="text-sm font-bold text-white mb-1">
+                        Government Subsidy & Grant Disbursement Tracking System
+                      </h5>
+                      <p className="text-xs text-slate-300 leading-relaxed mb-2">
+                        Engineered a transparent grant management web system using Java Spring Boot layered architecture (Controller, Service, Repository), Spring Data JPA, Hibernate, MySQL, and React.
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        <span className="px-2 py-0.5 text-[11px] font-mono rounded bg-white/5 text-slate-300 border border-white/10">Java</span>
+                        <span className="px-2 py-0.5 text-[11px] font-mono rounded bg-white/5 text-slate-300 border border-white/10">Spring Boot</span>
+                        <span className="px-2 py-0.5 text-[11px] font-mono rounded bg-white/5 text-slate-300 border border-white/10">React.js</span>
+                        <span className="px-2 py-0.5 text-[11px] font-mono rounded bg-white/5 text-slate-300 border border-white/10">MySQL</span>
+                        <span className="px-2 py-0.5 text-[11px] font-mono rounded bg-white/5 text-slate-300 border border-white/10">JPA/Hibernate</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}

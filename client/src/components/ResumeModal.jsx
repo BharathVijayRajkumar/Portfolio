@@ -165,10 +165,10 @@ export default function ResumeModal({ isOpen, onClose }) {
           {/* Projects */}
           <div>
             <h2 className="text-xs font-mono uppercase tracking-widest text-cyan-400 font-bold border-b border-white/10 pb-1 mb-2">
-              Projects
+              Key Engineering Projects
             </h2>
             <div className="space-y-3">
-              {projects.slice(0, 2).map((proj, idx) => (
+              {projects.slice(0, 3).map((proj, idx) => (
                 <div key={idx} className="p-3.5 rounded-xl bg-white/5 border border-white/5 space-y-1.5">
                   <div className="flex justify-between items-baseline">
                     <h3 className="font-bold text-white text-sm">

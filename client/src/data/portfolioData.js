@@ -183,15 +183,15 @@ export const portfolioData = {
     {
       id: "government-subsidy-tracking",
       title: "Government Subsidy & Grant Disbursement Tracking System",
-      subtitle: "Enterprise Java Spring Boot & React Transparency Portal",
-      description: "An enterprise-grade tracking and disbursement system designed to monitor government subsidies, verify beneficiary eligibility, manage fund allocations, and maintain transparent audit trails across public programs.",
+      subtitle: "Infosys Springboard Internship Capstone • Enterprise Java Full Stack",
+      badge: "Infosys Internship Project",
+      description: "Developed during the Infosys Springboard Java Full Stack Internship 7.0: An enterprise-grade tracking and disbursement system designed to monitor government subsidies, verify beneficiary eligibility, manage fund allocations, and maintain transparent audit trails across public programs.",
       category: "Java Full Stack",
       tags: ["Java", "Spring Boot", "React.js", "MySQL", "Spring Data JPA", "Hibernate", "REST APIs"],
       metrics: "Layered enterprise architecture with JPA/Hibernate & MySQL",
       featured: true,
       githubUrl: "https://github.com/BharathVijayRajkumar/Government-Subsidy-Grant-Disbursement-Tracking-System",
-      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
-      architectureNotes: "Engineered with a clean layered backend architecture (Controller, Service, Repository) powered by Java Spring Boot and Spring Data JPA. Includes database-level validations, MySQL transactions, and a reactive React.js frontend for transparent disbursement telemetry."
+      architectureNotes: "Engineered during the Infosys Springboard internship with a clean layered architecture (Controller, Service, Repository) powered by Java Spring Boot and Spring Data JPA. Includes database-level validations, MySQL transactions, and a reactive React.js frontend for transparent disbursement telemetry."
     },
     {
       id: "deepfake-forensics",
@@ -219,7 +219,7 @@ export const portfolioData = {
       achievements: [
         "Completed virtual internship training in Java Full Stack Development.",
         "Gained practical knowledge of Java, Spring Boot, React.js, REST APIs, SQL, HTML, CSS, and JavaScript.",
-        "Developed skills in building end-to-end web applications with clean client-server separation."
+        "Engineered Capstone Project: Government Subsidy & Grant Disbursement Tracking System using React, Spring Boot, Hibernate, and MySQL."
       ]
     }
   ],
