@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { portfolioData } from '../data/portfolioData';
 import { 
   ArrowRight, 
-  Terminal, 
   Mail, 
   Sparkles, 
   Layers, 
@@ -136,15 +135,6 @@ export default function Hero({ onOpenTerminal }) {
               <Mail className="w-4 h-4 text-cyan-400" />
               <span>Get In Touch</span>
             </a>
-
-            <button
-              onClick={onOpenTerminal}
-              className="inline-flex items-center gap-2 px-5 py-3.5 text-sm font-mono text-slate-300 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/50 rounded-xl transition-all transform hover:-translate-y-0.5"
-              title="Launch Interactive Terminal"
-            >
-              <Terminal className="w-4 h-4 text-cyan-400" />
-              <span>Interactive CLI</span>
-            </button>
           </div>
 
           {/* Core Tech Stack Ribbon */}
