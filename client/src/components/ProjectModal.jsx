@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ExternalLink, CheckCircle2, Layers, Cpu, Database } from 'lucide-react';
+import { X, CheckCircle2, Layers, Cpu, Database } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function ProjectModal({ project, onClose }) {
@@ -106,27 +106,15 @@ export default function ProjectModal({ project, onClose }) {
 
           {/* Actions */}
           <div className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <a
-                href={project.demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-white shadow-neon-cyan transition-all"
-              >
-                <ExternalLink className="w-4 h-4" />
-                <span>Visit Live Demo</span>
-              </a>
-
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition-colors"
-              >
-                <GithubIcon className="w-4 h-4" />
-                <span>Source Code</span>
-              </a>
-            </div>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-white shadow-neon-cyan transition-all"
+            >
+              <GithubIcon className="w-4 h-4" />
+              <span>View Source Code on GitHub</span>
+            </a>
 
             <button
               onClick={onClose}

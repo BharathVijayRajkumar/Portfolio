@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Sparkles, ArrowUpRight, Info } from 'lucide-react';
+import { Sparkles, ArrowUpRight, Info } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function ProjectCard({ project, onSelectProject }) {
@@ -74,27 +74,16 @@ export default function ProjectCard({ project, onSelectProject }) {
             <span>Architecture & Details</span>
           </button>
 
-          <div className="flex items-center gap-2">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 transition-colors"
-              title="View Repository"
-            >
-              <GithubIcon className="w-4 h-4" />
-            </a>
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500/10 hover:bg-cyan-500 text-cyan-400 hover:text-white border border-cyan-500/30 transition-all"
-              title="Live Demo"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              <span>Live Demo</span>
-            </a>
-          </div>
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 hover:border-cyan-500/40 transition-all"
+            title="View Code on GitHub"
+          >
+            <GithubIcon className="w-3.5 h-3.5 text-cyan-400" />
+            <span>View Code</span>
+          </a>
         </div>
       </div>
     </div>

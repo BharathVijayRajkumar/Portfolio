@@ -78,7 +78,7 @@ export default function TerminalModal({ isOpen, onClose }) {
         output = portfolioData.projects
           .map(
             (p, idx) =>
-              `${idx + 1}. ${p.title} (${p.category})\n   Tags: ${p.tags.join(', ')}\n   Desc: ${p.description}\n   Demo: ${p.demoUrl}`
+              `${idx + 1}. ${p.title} (${p.category})\n   Tags: ${p.tags.join(', ')}\n   Desc: ${p.description}\n   Code: ${p.githubUrl}`
           )
           .join('\n\n');
         break;
