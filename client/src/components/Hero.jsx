@@ -17,6 +17,7 @@ export default function Hero({ onOpenTerminal }) {
 
   const roles = [
     "Full-Stack Developer (MERN & Java)",
+    "Java Full Stack Intern @ Infosys Springboard",
     "B.Tech IT @ Sona College of Technology",
     "Java & Spring Boot Developer",
     "IoT & Assistive Tech Engineer",
