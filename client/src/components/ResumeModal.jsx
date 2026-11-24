@@ -48,25 +48,35 @@ export default function ResumeModal({ isOpen, onClose }) {
 
         {/* Printable Resume Content Body */}
         <div className="p-6 sm:p-10 overflow-y-auto space-y-6 bg-[#0a0e1a] text-slate-200 text-sm">
-          {/* Resume Header */}
-          <div className="text-center border-b border-white/10 pb-5">
-            <h1 className="text-3xl font-black tracking-wide text-white">
-              {personal.name.toUpperCase()}
-            </h1>
-            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs text-slate-300 mt-2 font-mono">
-              <span className="text-emerald-400 font-semibold">Mobile: {personal.phone}</span>
-              <span className="text-slate-600">|</span>
-              <a href={`mailto:${personal.email}`} className="text-cyan-400 hover:underline">
-                E-mail: {personal.email}
-              </a>
-              <span className="text-slate-600">|</span>
-              <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                LinkedIn: bharathr-it
-              </a>
-              <span className="text-slate-600">|</span>
-              <a href={personal.github} target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
-                GitHub: BharathVijayRajkumar
-              </a>
+          {/* Resume Header with Headshot */}
+          <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between border-b border-white/10 pb-5 gap-5">
+            <div className="text-center sm:text-left flex-1">
+              <h1 className="text-3xl font-black tracking-wide text-white">
+                {personal.name.toUpperCase()}
+              </h1>
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 text-xs text-slate-300 mt-2 font-mono">
+                <span className="text-emerald-400 font-semibold">Mobile: {personal.phone}</span>
+                <span className="text-slate-600">|</span>
+                <a href={`mailto:${personal.email}`} className="text-cyan-400 hover:underline">
+                  E-mail: {personal.email}
+                </a>
+              </div>
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 text-xs text-slate-300 mt-1.5 font-mono">
+                <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                  LinkedIn: bharathr-it
+                </a>
+                <span className="text-slate-600">|</span>
+                <a href={personal.github} target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:underline">
+                  GitHub: BharathVijayRajkumar
+                </a>
+              </div>
+            </div>
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden border-2 border-white/20 shadow-lg flex-shrink-0 bg-slate-900">
+              <img
+                src={personal.avatar || "/profile.jpg"}
+                alt={personal.name}
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
 

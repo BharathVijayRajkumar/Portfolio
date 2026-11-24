@@ -73,7 +73,7 @@ export default function Hero({ onOpenTerminal }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Availability Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-glass border border-white/10 shadow-glass mb-8 animate-float">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-glass border border-white/10 shadow-glass mb-6 animate-float">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
@@ -81,6 +81,21 @@ export default function Hero({ onOpenTerminal }) {
             <span className="text-xs sm:text-sm font-medium text-slate-300">
               {personal.availability}
             </span>
+          </div>
+
+          {/* Profile Picture Avatar with Neon Glow */}
+          <div className="relative mb-6 group">
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-sky-400 to-violet-600 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition duration-500 group-hover:scale-105 animate-pulse-slow"></div>
+            <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full p-[3px] bg-gradient-to-tr from-cyan-400 via-indigo-500 to-violet-500 shadow-neon-cyan">
+              <img
+                src={personal.avatar || "/profile.jpg"}
+                alt={personal.name}
+                className="w-full h-full object-cover object-top rounded-full bg-[#0d121f]"
+              />
+            </div>
+            <div className="absolute bottom-1 right-1 w-7 h-7 rounded-full bg-[#070a12] p-1 flex items-center justify-center border border-white/20 shadow-lg" title="Active & Ready for Opportunities">
+              <span className="w-3.5 h-3.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            </div>
           </div>
 
           {/* Main Headline */}

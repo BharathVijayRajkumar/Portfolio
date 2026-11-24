@@ -1,6 +1,7 @@
 export const portfolioData = {
   personal: {
     name: "Bharath R",
+    avatar: "/profile.jpg",
     title: "Information Technology Undergraduate & Full-Stack Developer",
     subtitle: "Java & Python • Full-Stack MERN & Spring Boot • IoT & Cloud Solutions",
     bio: "Information Technology undergraduate with a strong foundation in Java, Python, database management, and full-stack development. Interested in developing scalable software solutions and working with modern technologies. Eager to apply problem-solving skills, technical knowledge, and practical project experience while contributing to organizational goals.",

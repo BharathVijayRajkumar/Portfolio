@@ -46,8 +46,29 @@ export default function About({ onOpenResume }) {
           {/* Left Column: Interactive Profile Card / Code Window */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="glass-card rounded-2xl p-6 relative border border-white/10 shadow-glass overflow-hidden">
+              {/* Profile Card Header with Real Avatar */}
+              <div className="flex items-center gap-4 pb-5 mb-5 border-b border-white/10">
+                <div className="relative flex-shrink-0">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl p-[2px] bg-gradient-to-tr from-cyan-400 via-sky-400 to-violet-500 shadow-neon-cyan">
+                    <img
+                      src={personal.avatar || "/profile.jpg"}
+                      alt={personal.name}
+                      className="w-full h-full object-cover object-top rounded-[14px]"
+                    />
+                  </div>
+                  <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#070a12]"></span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                    {personal.name}
+                  </h3>
+                  <p className="text-xs text-cyan-400 font-mono">B.Tech IT @ Sona College</p>
+                  <p className="text-xs text-slate-400 mt-0.5">{personal.location}</p>
+                </div>
+              </div>
+
               {/* Header bar mimicking an IDE terminal */}
-              <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+              <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/5">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 rounded-full bg-rose-500/80"></div>
                   <div className="w-3 h-3 rounded-full bg-amber-500/80"></div>
